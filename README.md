@@ -14,3 +14,9 @@ docker build -t startpage:latest .
 ```bash
 docker compose up -d
 ```
+or
+```bash
+run --rm -it --name startpage -v ./volumes/content:/app/src/content -p 3000:3000 startpage:latest
+```
+Server will listen to port 3000 by default.
+
