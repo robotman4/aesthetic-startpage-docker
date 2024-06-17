@@ -1,0 +1,8 @@
+services:
+    startpage:
+        image: startpage:late
+        volumes:
+            - ./volumes/content:/app/src/content
+        ports:
+            - 3000:3000
+
